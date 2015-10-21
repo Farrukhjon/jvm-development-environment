@@ -13,8 +13,12 @@ Vagrant.configure(2) do |config|
   config.vm.boot_timeout = 300
   config.vm.graceful_halt_timeout = 60
   config.vm.usable_port_range = 2200..2250
-  config.vm.post_up_message = "Login credentials are vagrant/vagrant"
 
+  config.vm.synced_folder "~/.gradle", "/home/vagrant/.gradle", mount_options: ["dmode=755"]
+  config.vm.synced_folder "~/Projects/Github/farrukhjon", "/home/vagrant/GitHub/farrukhjon", mount_options: ["dmode=755"]
+  config.vm.synced_folder "~/Documents/Literature/Development", "/home/vagrant/Documentations", mount_options: ["dmode=755"]
+  
+  config.vm.post_up_message = "Login credentials are vagrant/vagrant"
  
   config.vm.provider "virtualbox" do |v|
         v.gui = true
@@ -45,6 +49,5 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell" do |remote|
        remote.path = "scripts/install-development-tools.sh"
   end
-
 
 end
