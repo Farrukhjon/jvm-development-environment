@@ -30,6 +30,7 @@ Building
 -----------
 1. Clone this repo
 2. Go to the directory
-3. Type command `vagrant up`
+3. Edit `config.vm.synced_folder` to your preferable sync folders
+4. Type command `vagrant up`
 
 
