@@ -5,22 +5,24 @@ The Operating System is Ubuntu Linux with minimal xfce UI (not xubuntu-desktop) 
 
 Structure of the project
 --------------
-`
-├── files
-│   └── inventory
-├── README.md
-├── scripts
-│   ├── install-ansible.sh
-│   ├── install-development-tools.sh
-│   ├── install-docker.sh
-│   ├── install-google-chrome.sh
-│   └── install-xfce4.sh
-└── Vagrantfile
-`
+<pre>
+ <code>
+ ├── files
+ │   └── inventory
+ ├── README.md
+ ├── scripts
+ │   ├── install-ansible.sh
+ │   ├── install-development-tools.sh
+ │   ├── install-docker.sh
+ │   ├── install-google-chrome.sh
+ │   └── install-xfce4.sh
+ └── Vagrantfile
+ </code>
+</pre>
 
 Pre-request
 ------------
-Before starting create the project make sure you have turned on `CPU virtualization technology` via BIOS and installed the folowing programms:
+Before starting create the project make sure you have turned on `CPU virtualization technology` via BIOS and installed the folowing programms
 1. VirtualBox
 2. Vagrant
 
