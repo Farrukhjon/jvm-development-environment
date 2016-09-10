@@ -1,0 +1,8 @@
+jdk_url: http://download.oracle.com/otn-pub/java/jdk/8u72-b15/jdk-8u72-linux-x64.tar.gz
+idea_url: http://download.jetbrains.com/idea/ideaIU-14.1.6.tar.gz
+mvn_url: http://www.eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
+jdk_artifact: /home/vagrant/Download/jdk8.tar.gz
+idea_artifact: /home/vagrant/Download/idea.tar.gz
+mvn_artifact: /home/vagrant/Download/maven.tar.gz
+soft_dest: /home/vagrant/Software
+
